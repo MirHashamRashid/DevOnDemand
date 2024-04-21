@@ -4,13 +4,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        "hidcot-red": "#D02C2F",
-        "hidcot-black": "#1c1c1c",
-        "hidcot-white": "#FFFFFF",
-        "hidcot-claret": "#7F2629",
-        "hidcot-burnt-red": "#EE907B",
-        "hidcot-dark-gray": "#76777A",
-        "hidcot-silver": "#BBBBBB",
+        "primary-red": "#D02C2F",
+        "primary-black": "#1c1c1c",
+        "primary-white": "#FFFFFF",
+        "secondary-claret": "#7F2629",
+        "secondary-burnt-red": "#EE907B",
+        "secondary-dark-gray": "#F2F2F2",
+        "secondary-silver": "#BBBBBB",
       },
       fontFamily: {
         body: ["Figtree", "Roboto", "Arial", "sans-serif"],
@@ -31,7 +31,6 @@ export default {
         "9xl": ["8rem", { lineHeight: "1" }], // 128px
       },
       screens: {
-        xxs: "360px", // extra extra small devices
         xs: "480px", // extra small devices
         sm: "640px", // small devices, phones
         md: "768px", // medium devices, tablets
@@ -40,6 +39,7 @@ export default {
         "2xl": "1536px", // very large devices
         "3xl": "1920px", // extra extra large devices
       },
+     
     },
   },
   plugins: [],
