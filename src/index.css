@@ -34,8 +34,29 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: 1.875rem;
+  font-family: "Jost",sans-serif;
+  font-weight: 500;
+}
+h2{
+  font-size: 1.640625rem;
+  font-family: "Jost",sans-serif;
+  font-weight: 500;
+}
+h3{
+  font-size: 18pt;
+  font-family: "figtree",sans-serif;
+  font-weight: 600;
+}
+h4{
+  font-size: 12pt;
+  font-family: "figtree",sans-serif;
+  font-weight: 600;
+}
+p{
+  font-size: 10pt;
+  font-family: "figtree",sans-serif;
+  font-weight: 400;
 }
 
 button {

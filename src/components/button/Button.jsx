@@ -3,7 +3,7 @@ import  { useState } from 'react';
 // import './style.css'; // Assuming this contains the ripple effect CSS
 
 const colorClasses = {
-  primary: 'text-white bg-primary-red border-primary shadow-md shadow-primary/50 hover:bg-primary-black disabled:bg-gray-300 disabled:border-gray-400 disabled:text-gray-400 disabled:shadow-none',
+  primary: 'text-white bg-secondary-claret border-primary shadow-md shadow-primary/50 hover:bg-secondary-claret disabled:bg-gray-300 disabled:border-gray-400 disabled:text-gray-400 disabled:shadow-none',
   secondary: 'text-white bg-secondary border-secondary shadow-md shadow-secondary/50 hover:bg-secondary-dark disabled:bg-gray-300 disabled:border-gray-400 disabled:text-gray-400 disabled:shadow-none',
   error: 'text-white bg-error border-error shadow-md shadow-error/50 hover:bg-error-dark disabled:bg-gray-300 disabled:border-gray-400 disabled:text-gray-400 disabled:shadow-none',
   success: 'text-white bg-success border-success shadow-md shadow-success/50 hover:bg-success-dark disabled:bg-gray-300 disabled:border-gray-400 disabled:text-gray-400 disabled:shadow-none',
