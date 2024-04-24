@@ -6,7 +6,7 @@ const Login = () => {
   return (
     <div className='w-full h-screen flex justify-center items-center bg-secondary-dark-gray'>
        <div className=' flex justify-items-center w-full mx-1  flex-col items-center  lg:w-[600px] sm:mx-20 md:mx-20  '>
-        <h2 className='text-[#203A45] text-2xl xs:text-2xl sm:text-center sm:text-4xl' >Login</h2>
+        <h1 className=' text-[#203A45]  ' >Login</h1>
         <p className='text-[#333333]'>Sign in to your account</p>
        <div className='flex flex-col w-full items-center justify-center my-4 rounded-lg px-12  bg-white py-10 drop-shadow-2xl' >
             <img className='w-20' src={Icon} alt="" />
