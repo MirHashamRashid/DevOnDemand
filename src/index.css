@@ -17,14 +17,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
+
 
 body {
   box-sizing: border-box;
@@ -77,16 +70,30 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
-
+li{
+  cursor: pointer;
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
   }
-  a:hover {
-    color: #747bff;
-  }
+
   button {
     background-color: #f9f9f9;
   }
+}
+::-webkit-scrollbar {
+  width: 12px; /* Set the width of the scrollbar (e.g., 10px) */
+}
+
+/* Customize the color of the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #4A5568; /* Dark gray color */
+  border-radius: 2rem; /* Rounded corners */
+}
+
+/* Optionally, customize the color of the scrollbar track */
+::-webkit-scrollbar-track {
+  background-color: #E2E8F0; /* Light gray color */
 }

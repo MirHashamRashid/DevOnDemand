@@ -1,5 +1,5 @@
 import React from 'react'
-import Icon from '../assets/brandmark.png'
+import Icon from '../assets/images/brandmark.png'
 import Button from './button/Button'
 
 const ForgotPassword = () => {

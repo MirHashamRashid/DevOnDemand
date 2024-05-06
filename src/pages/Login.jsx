@@ -1,5 +1,5 @@
 import React from 'react'
-import Icon from '../assets/brandmark.png'
+import Icon from '../assets/images/brandmark.png'
 import { Link } from 'react-router-dom'
 import Button from '../components/button/Button'
 const Login = () => {
