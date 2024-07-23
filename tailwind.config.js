@@ -1,46 +1,73 @@
-/** @type {import('tailwindcss').Config} */
-export default {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+module.exports = {
+  content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
+    fontFamily: {
+      primary: 'Orbitron',
+      secondary: 'Rajdhani',
+      tertiary: 'Aldrich',
+    },
+    container: {
+      padding: {
+        DEFAULT: '15px',
+      },
+    },
+    screens: {
+      sm: '640px',
+      md: '768px',
+      lg: '960px',
+      xl: '1200px',
+    },
     extend: {
       colors: {
-        "primary-red": "#D02C2F",
-        "primary-black": "#1c1c1c",
-        "primary-white": "#FFFFFF",
-        "secondary-claret": "#7F2629",
-        "secondary-burnt-red": "#EE907B",
-        "secondary-dark-gray": "#F2F2F2",
-        "secondary-silver": "#BBBBBB",
+        primary: '#0a0a0a',
+        accent: '#B809C3',
+        'theme-1':{
+          background: 'var(--bg-color)',
+          btn: 'var(--btn-color)',
+          h2: 'var(--h2-color)',
+          p: 'var(-paragraph-color)'
+        },
+        'theme-2':{
+          background: 'var(--bg-color)',
+          btn: 'var(--btn-color)',
+          h2: 'var(--h2-color)',
+          p: 'var(-paragraph-color)'
+        },
+        'theme-3':{
+          background: 'var(--bg-color)',
+          btn: 'var(--btn-color)',
+          h2: 'var(--h2-color)',
+          p: 'var(-paragraph-color)'
+        },
+        'theme-4':{
+          background: 'var(--bg-color)',
+          btn: 'var(--btn-color)',
+          h2: 'var(--h2-color)',
+          p: 'var(-paragraph-color)'
+        },
       },
-      fontFamily: {
-        body: ["Figtree", "Roboto", "Arial", "sans-serif"],
+      clipPath:{
+        'custom':'polygon(29% 0, 100% 0, 100% 43%, 100% 100%, 50% 100%, 44% 76%, 24% 59%, 35% 36%, 36% 17%)'
       },
-      fontSize: {
-        xs: ["0.75rem", { lineHeight: "1rem" }], // 12px
-        sm: ["0.875rem", { lineHeight: "1.25rem" }], // 14px
-        base: ["1rem", { lineHeight: "1.5rem" }], // 16px
-        lg: ["1.125rem", { lineHeight: "1.75rem" }], // 18px
-        xl: ["1.25rem", { lineHeight: "1.75rem" }], // 20px
-        "2xl": ["1.5rem", { lineHeight: "2rem" }], // 24px
-        "3xl": ["1.875rem", { lineHeight: "2.25rem" }], // 30px
-        "4xl": ["2.25rem", { lineHeight: "2.5rem" }], // 36px
-        "5xl": ["3rem", { lineHeight: "1" }], // 48px
-        "6xl": ["3.75rem", { lineHeight: "1" }], // 60px
-        "7xl": ["4.5rem", { lineHeight: "1" }], // 72px
-        "8xl": ["6rem", { lineHeight: "1" }], // 96px
-        "9xl": ["8rem", { lineHeight: "1" }], // 128px
+      backgroundImage: {
+        site: "url('./assets/site-bg.jpg')",
+        about: "url('./src/images/devOnDemandBanner.png')",
+        services: "url('./src/images/servicesRaw.jpg')",
+        app: 'linear-gradient(to bottom right, #00AFB9, #FED9B7)',
+        contact:"url('./src/images/contact-banner.svg')",
+        faq:"url('./src/images/faq2.webp')"
       },
-      screens: {
-        xs: "480px", // extra small devices
-        sm: "640px", // small devices, phones
-        md: "768px", // medium devices, tablets
-        lg: "1024px", // large devices, desktops
-        xl: "1280px", // extra large devices, large desktops
-        "2xl": "1536px", // very large devices
-        "3xl": "1920px", // extra extra large devices
-      },
-     
+      borderRadius: {
+        'custom': '0% 100% 16% 84% / 99% 13% 87% 1%',
+      }
     },
   },
-  plugins: [],
+  plugins: [function({ addUtilities }) {
+    const newUtilities = {
+      '.clip-path-custom': {
+        clipPath: 'polygon(39% 1%, 100% 0, 100% 43%, 100% 100%, 60% 100%, 47% 79%, 36% 59%, 44% 40%, 52% 19%);',
+      },
+    };
+    addUtilities(newUtilities, ['responsive', 'hover']);
+  }],
 };

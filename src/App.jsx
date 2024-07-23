@@ -1,30 +1,31 @@
-
-import {Routes,Route } from 'react-router-dom'
-import SignUp from './components/Qadir Agha/SignUp'
-import Layout from './components/Qadir Agha/Layout'
-import Register from './components/Qadir Agha/Register'
-import Inbox from './pages/Inbox'
-import Contacts from './pages/Contacts'
-import Test from './components/Test'
+import Header from "./components/Header";
+import Banner from './components/Banner'
+import Navbar from "./components/Navbar";
+import AboutUs from "./components/AboutUs";
+import Services from "./components/Services";
+import ContactUs from "./components/ContactUs";
+import Footer from './components/Footer'
+import TeamMembers from "./components/TeamMembers";
+import FAQ from "./components/FAQ";
+import { useContext } from "react";
+import { ThemeContext } from "./util/ThemeContext";
+import AnimatedBackground from "./components/AnimatedBackground"
 function App() {
-  
-
+const {theme, themes} = useContext(ThemeContext)
   return (
-    <Routes >
-      <Route  path='/' element={<Layout/>}>
-
-    <Route  index element={<SignUp/>}/>
-      <Route path='inbox' element={<Inbox/>}/>
-      <Route path='contacts' element={<Contacts/>}/>
-      </Route>
-      <Route  path='/signup' element={<SignUp/>}/>
-      <Route  path='/register' element={<Register/>}/>
-
+   <div className={`bg-no-repeat bg-cover overflow-hidden`}>
   
-    {/* <Route path='/layout' element={<Layout/>} /> */}
-    {/* <Route path='/login' element={<Login/>}/>
-    <Route path='/forgotPassword' element={<ForgotPassword/>}/> */}
-   </Routes>
+    <Header/>
+    <Banner/>
+     <AboutUs/>
+    <Navbar/>
+    <Services/>
+    <TeamMembers/> 
+    <FAQ/>
+    <ContactUs/>
+    <Footer/>
+  
+   </div>
 
   )
 }
