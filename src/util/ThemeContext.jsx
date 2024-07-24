@@ -4,7 +4,7 @@ export const ThemeContext = createContext();
 
 
 export const ThemeProvider = ({children}) =>{
-    const [theme, setTheme] = useState('theme-3');
+    const [theme, setTheme] = useState('theme-1');
 
    
 
