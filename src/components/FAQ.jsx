@@ -26,9 +26,9 @@ const FAQ = () => {
     initial='hidden'
     whileInView={'show'}
     viewport={{once: false, amount:0.3}}
-     className='flex flex-col items-center'>
-        <h4 className='text-2xl uppercase text-black/30 font-medium mb-1 tracking-wide'>FAQ</h4>
-        <h2 className='text-[45px] lg:text-[70px] text-black/30 leading-none mb-1'>Frequently asked <br/> Questions</h2>
+     className='flex flex-col items-center mb-4'>
+        <h4 className='text-2xl uppercase font-medium mb-1 tracking-wide'>FAQ</h4>
+        <h2 className='text-[45px] lg:text-[70px] leading-none mb-1'>Frequently asked <br/> Questions</h2>
      </motion.div>
     
      <div className='flex rounded-3xl min-h-[50vh] shadow-m bg-black/5 p-4 gap-x-3 shadow-2xl'>

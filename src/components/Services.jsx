@@ -12,27 +12,27 @@ import GlowingBox from "./glowingCard/GlowingBox";
 // services Data
 const services = [
   {
-    name: "UI/UX design",
+    name: "Software Maintenance",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+      "Keep your software reliable, secure, and up-to-date with our maintenance services. We address bugs, performance issues, and security vulnerabilities, ensuring smooth, uninterrupted operation. Focus on your business while we handle the rest.",
     link: "Learn more",
   },
   {
     name: "Web Development",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+      "Elevate your online presence with dynamic, responsive websites. Our team designs and develops custom web solutions optimized for performance and user experience. Drive engagement and conversions across all devices.",
     link: "Learn more",
   },
   {
     name: "Mobile Development",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+      "Develop intuitive, high-performance mobile applications for iOS and Android. Our expert team creates seamless, scalable solutions tailored to your business needs. Engage and delight users with innovative mobile experiences..",
     link: "Learn more",
   },
   {
     name: "Web3 Development",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+      "Harness blockchain technology with our Web3 development services. We build secure, efficient decentralized applications and smart contracts. Experience the future with transparent, high-performance solutions.",
     link: "Learn more",
   },
 ];

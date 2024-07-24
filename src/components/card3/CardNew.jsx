@@ -27,7 +27,7 @@ const CardNew = ({cards}) => {
                     {/* <span className="card__status">1 hour ago</span> */}
                   </div>
                 </div>
-                <p className="card__description">{card.description}</p>
+                <p className="card__description overflow-y-auto">{card.description}</p>
               </div>
             </a>      
           </motion.li>

@@ -1,5 +1,5 @@
 import React from "react";
-import ContactUsBG from "../images/contact.png";
+import ContactUsBG from "../images/coding-4.png";
 //countUp
 import CountUp from "react-countup";
 // intersection observer hook
@@ -19,7 +19,7 @@ const AboutUs = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1  flex justify-center h-[200px] lg:h-[640px] bg-top"
+            className="flex-1  flex justify-center h-[200px] lg:h-[640px]"
           >
             <img src={ContactUsBG} alt="" />
           </motion.div>

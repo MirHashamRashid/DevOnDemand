@@ -6,17 +6,22 @@ import logo from '../images/Mir.png'
 const Team = [
   {
     name: "Qadir Agha",
-    Job: "Front-end and Back-end Developer",
+    Job: "full Stack developer",
     img: logo
   },
   {
-    name: "Qadir Agha",
-    Job: "Front-end and Back-end Developer",
+    name: "Ashraf Khan",
+    Job: "Front-end Developer",
     img: logo
   },
   {
-    name: "Qadir Agha",
-    Job: "Front-end and Back-end Developer",
+    name: "Shakir Naimy",
+    Job: "Back-end Developer",
+    img: logo
+  },
+  {
+    name: "MirHasham Rashid",
+    Job: "Front-end Developer",
     img: logo
   },
 ];

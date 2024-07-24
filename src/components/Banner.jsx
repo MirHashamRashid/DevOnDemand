@@ -14,7 +14,7 @@ const Banner = () => {
           id="home"
         >
           {/* text container */}
-          <div className="flex-1   text-center font-secondary lg:text-left ">
+          <div className="flex-1 text-center font-secondary lg:text-left ">
             <motion.h1
               variants={fadeIn("up", 0.3)}
               initial="hidden"
@@ -42,7 +42,7 @@ const Banner = () => {
                   2000,
                 ]}
                 speed={50}
-                className="text-[#0081A7]"
+                className="  text-[#4dc7d9] "
                 wrapper="span"
                 repeat={Infinity}
               />
@@ -53,7 +53,7 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="mb-8 max-w-lg mx-auto text-left text-xl lg:mx-0 text-black"
+              className="mb-8 max-w-lg mx-auto text-left text-lg font-primary lg:mx-0 text-black/90 "
             >
               Transforming Ideas into Digital Realities Innovative Solutions
               Tailored for Your Business Empowering Growth Through Cutting-Edge
@@ -67,7 +67,7 @@ const Banner = () => {
               className="flex max-w-max gap-x-6 items-center mb-2 mx-auto lg:mx-0"
             >
               <button className="btn btn-lg">Contact US</button>
-              <a href="#services" className="text-gradient btn-link">
+              <a href="#services" className="text-gradient">
                 Our Services
               </a>
             </motion.div>
