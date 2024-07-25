@@ -7,11 +7,7 @@
     box-sizing: border-box;
   }
   
-  body {
-    font-family: 'Noto Sans JP', sans-serif;
-    background-color: #fef8f8;
-   
-  }
+ 
   
   .cards {
     display: grid;
@@ -34,6 +30,8 @@
   .card__image {      
     width: 100%;
     height: auto;
+    height: 400px;
+    object-fit: cover;
   }
   
   .card__overlay {
@@ -92,9 +90,9 @@
   }
   
   .card__title {
-    font-size: 1em;
+    font-size: 1.5em;
     margin: 0 0 .3em;
-    color: #6A515E;
+    color: black;
   }
   
   .card__tagline {
@@ -113,7 +111,7 @@
   .card__description {
     padding: 0 2em 2em;
     margin: 0;
-    color: #D7BDCA;
+    color: rgb(112, 106, 106);
     font-family: "MockFlowFont";   
     display: -webkit-box;
     -webkit-box-orient: vertical;
