@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { fadeIn } from '../variants'
 import { FaPlus, FaArrowUp } from 'react-icons/fa6'
 import { Disclosure } from '@headlessui/react';
+import Faq from '../images/faq2.webp'
 const faqs = [
   {
     question: 'What is your return policy?',
@@ -37,8 +38,8 @@ const FAQ = () => {
           initial='hidden'
           whileInView={'show'}
           viewport={{once: false, amount:0.3}}
-          className='flex-1 bg-cover  flex bg-faq bg-no-repeat justify-center lg:justify-start items-center'>
-          
+          className='flex-1 bg-cover hidden pointer-events-none md:flex  justify-center lg:justify-start items-center'>
+          <img src={Faq} alt="" />
           </motion.div>
     <motion.div variants={fadeIn('left', 0.3)}
           initial='hidden'

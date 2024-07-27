@@ -19,7 +19,7 @@ const AboutUs = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1  flex justify-center h-[200px] lg:h-[640px]"
+            className="flex-1  flex justify-center pointer-events-none h-[200px] lg:h-[640px]"
           >
             <img src={ContactUsBG} alt="" />
           </motion.div>
@@ -42,9 +42,9 @@ const AboutUs = () => {
             Our dedicated team is committed to driving your success through technology and creativity.
             </p>
             {/* stats */}
-            <div className="flex gap-x-6 lg:gap-x-10 mb-2 ">
+            <div className="flex gap-x-3 lg:gap-x-10 mb-2 ">
               <div className="bg-black/5 hover:bg-black/10 dark:hover:border dark:hover:bg-transparent rounded-2xl md:px-4 md:py-4 py-5 px-1 dark:bg-white/5">
-                <div className="text-[40px] font-tertiary text-gradient dark:text-white mb-2">
+                <div className="text-[30px] md:text-[40px] font-tertiary text-gradient dark:text-white mb-2">
                   {inView ? <CountUp start={0} end={5} duration={3} /> : null}
                 </div>
                 <div className="font-primary text-sm tracking-[2px] text-white dark:text-black/60">
@@ -53,7 +53,7 @@ const AboutUs = () => {
                 </div>
               </div>
               <div className="bg-black/5 hover:bg-black/10 dark:hover:border dark:hover:bg-transparent rounded-2xl md:px-4 md:py-4 py-5 px-1 dark:bg-white/5">
-                <div className="text-[40px] font-tertiary text-gradient dark:text-white mb-2">
+                <div className="text-[30px] md:text-[40px] font-tertiary text-gradient dark:text-white mb-2">
                   {inView ? <CountUp start={0} end={15} duration={4} /> : null}
                   k+
                 </div>
@@ -63,13 +63,15 @@ const AboutUs = () => {
                 </div>
               </div>
               <div className="bg-black/5 hover:bg-black/10 dark:hover:border dark:hover:bg-transparent rounded-2xl md:px-4 md:py-4 py-5 px-1 dark:bg-white/5">
-                <div className="text-[40px] font-tertiary text-gradient dark:text-white mb-2">
+                <div className="text-[30px] md:text-[40px] font-tertiary text-gradient dark:text-white mb-2">
                   {inView ? <CountUp start={0} end={6} duration={4} /> : null}
                   k+
                 </div>
                 <div className="font-primary text-sm tracking-[2px] text-black/65 dark:text-black/60 text-white">
+                  <span className="w-full">
                   Satisfied <br />
-                  Clients
+                  Clients  
+                  </span>
                 </div>
               </div>
             </div>
