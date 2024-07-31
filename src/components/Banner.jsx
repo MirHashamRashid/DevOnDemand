@@ -13,11 +13,11 @@ import { Link } from "react-scroll";
 
 const Banner = () => {
   return (
-    <section className="min-h-[85vh] lg:min-h-[78vh] flex items-center  text-black dark:text-white">
+    <section className="min-h-[85vh] lg:min-h-[78vh] flex items-center  text-black dark:text-white" id="home">
       <div className="container mx-auto">
         <div
           className="flex flex-col lg:flex-row lg:items-center lg:gap-x-12"
-          id="home"
+          
         >
           {/* text container */}
           <div className="flex-1 text-center font-secondary lg:text-left ">

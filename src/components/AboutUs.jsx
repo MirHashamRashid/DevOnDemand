@@ -11,9 +11,9 @@ const AboutUs = () => {
     threshold: 0.5,
   });
   return (
-    <section className="section bg-theme-1-background mb-4" id="about" ref={ref}>
+    <section className="section h-screen bg-theme-1-background mb-4" id="about" ref={ref}>
       <div className="container mx-auto">
-        <div className="flex shadow-m flex-col pl-4 gap-y-2 lg:flex-row lg:items-center  drop-shadow-2xl shadow-2xl rounded-3xl bg-black/5 lg:gap-x-20 lg:gap-y-0 h-screen">
+        <div className="flex shadow-m flex-col py-3 lg:py-0 pl-4 gap-y-2 lg:flex-row lg:items-center  drop-shadow-2xl shadow-2xl rounded-3xl bg-black/5 lg:gap-x-20 lg:gap-y-0 h-screen">
           <motion.div
             variants={fadeIn("right", 0.3)}
             initial="hidden"
