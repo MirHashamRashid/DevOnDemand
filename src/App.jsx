@@ -9,11 +9,11 @@ import TeamMembers from "./components/TeamMembers";
 import FAQ from "./components/FAQ";
 import { useContext } from "react";
 import { ThemeContext } from "./util/ThemeContext";
-import AnimatedBackground from "./components/AnimatedBackground"
+
 function App() {
 const {theme, themes} = useContext(ThemeContext)
   return (
-   <div className={`bg-no-repeat bg-cover overflow-hidden`}>
+   <div className={` overflow-hidden will-change-bg`}>
   
     <Header/>
     <Banner/>

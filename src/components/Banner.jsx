@@ -2,15 +2,21 @@ import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
-import BannerImage from "../images/coding2.png";
+import BannerImage from "../images/banner.png";
 import { FaGithub, FaFacebook, FaDribbble } from "react-icons/fa";
 import ThemeToggler from "../components/ThemeToggler";
+// import {SVG} from '../SVG/index';
+import icon1 from "../SVG/analys.svg";
+import icon2 from "../SVG/availability.svg";
+import icon3 from "../SVG/interface.svg";
+import { Link } from "react-scroll";
+
 const Banner = () => {
   return (
-    <section className=" min-h-[85vh] lg:min-h-[78vh] flex items-center  text-black dark:text-white">
+    <section className="min-h-[85vh] lg:min-h-[78vh] flex items-center  text-black dark:text-white">
       <div className="container mx-auto">
         <div
-          className="flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12"
+          className="flex flex-col lg:flex-row lg:items-center lg:gap-x-12"
           id="home"
         >
           {/* text container */}
@@ -20,7 +26,7 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="text-[55px] font-bold leading-[0.8] lg:text-[110px] "
+              className="text-[55px] font-bold leading-[0.8] lg:text-[110px] text-theme-1-h2"
             >
               DEV on <span>DEMAND</span>
             </motion.h1>
@@ -31,7 +37,7 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="mb-6 text-[36px] lg:text-[60] font-secondary font-semibold uppercase leading-[1]"
             >
-              <span className="dark:text-white mr-4 ">We deliver</span>
+              <span className="text-theme-1-h2 mr-4 ">We deliver</span>
               <TypeAnimation
                 sequence={[
                   "Quality",
@@ -53,7 +59,7 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="mb-8 max-w-lg mx-auto text-left text-lg font-primary lg:mx-0 text-black/90 "
+              className="mb-8 max-w-lg mx-auto  lg:text-left text-lg font-primary lg:mx-0 text-theme-1-p"
             >
               Transforming Ideas into Digital Realities Innovative Solutions
               Tailored for Your Business Empowering Growth Through Cutting-Edge
@@ -66,10 +72,16 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex max-w-max gap-x-6 items-center mb-2 mx-auto lg:mx-0"
             >
+              <Link to="contact" smooth={true}>
               <button className="btn btn-lg">Contact US</button>
-              <a href="#services" className="text-gradient">
+              </Link>
+              <Link
+                to="services"
+                className="text-gradient cursor-pointer"
+                smooth={true}
+              >
                 Our Services
-              </a>
+              </Link>
             </motion.div>
             <motion.div
               variants={fadeIn("up", 0.7)}
@@ -98,6 +110,18 @@ const Banner = () => {
             className="hidden lg:flex flex-1 max-w-[320px] pointer-events-none lg:mx-0 lg:max-w-[482px]"
           >
             <img src={BannerImage} alt="" />
+            <div className="absolute top-40 flex items-center gap-1 icon-1 font-tertiary text-theme-1-h2">
+              <img src={icon1} className="w-10 h-10" alt="" />
+              growth
+            </div>
+            <div className="absolute top-40 right-20 flex  items-center gap-1 icon-2 font-primary text-theme-1-h2">
+              <img src={icon2} className="w-10 h-10" alt="" />
+              API Creation
+            </div>
+            <div className="absolute bottom-40 flex items-center gap-1 icon-3 font-primary text-theme-1-h2">
+              <img src={icon3} className="w-10 h-10" alt="" />
+              Analytic
+            </div>
           </motion.div>
         </div>
       </div>
