@@ -19,7 +19,7 @@ const AboutUs = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 bg-cover  flex justify-center pointer-events-none h-[200px] lg:h-auto"
+            className="flex-1 bg-cover  flex justify-center pointer-events-none h-[200px] w-auto lg:h-auto"
           >
             <img src={ContactUsBG} alt="" />
           </motion.div>
@@ -31,10 +31,10 @@ const AboutUs = () => {
             viewport={{ once: false, amount: 0.3 }}
             className="flex-1"
           >
-            <h2 className="md:h2 md:text-[44px] md:mb-4 sm:text-xl sm:mb-0 font-secondary">
+            <h2 className="md:h2  text-[30px] md:text-[44px] md:mb-4 sm:mb-0 ">
               About US
             </h2>
-            <h3 className="md:h3 mb-4 sm:mb-1 ">
+            <h3 className="h3 text-[24px] mb-4 sm:mb-1 ">
               We Provide software services with over 5 years of experience.
             </h3>
             <p className="mb-6 text-xl">
