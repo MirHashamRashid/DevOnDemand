@@ -10,7 +10,7 @@ const ThemeToggler = () => {
   };
 
   return (
-    <div className="p-4 absolute top-20 right-3  lg:right-0 lg:rotate-90 lg:top-[20rem] gap-2 flex ">
+    <div className="p-4 absolute top-32 -right-10  lg:right-0 rotate-90 lg:top-[20rem] gap-2 flex ">
       <label htmlFor="themeSelect"></label>
 
       <motion.div

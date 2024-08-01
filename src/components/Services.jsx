@@ -43,7 +43,7 @@ const Services = () => {
           <h2 className="h2 text-gradient text-theme-1-h2">OUR services</h2>
           <h3 className="h3 ">what do we do?</h3>
         </div>
-        <div className=" shadow-2xl rounded-3xl shadow-m bg-black/5 drop-shadow-lg py-10 px-4">
+        <div className=" shadow-2xl rounded-3xl shadow-m bg-black/5 drop-shadow-lg py-10">
           <ServiceCard services={services} />
         </div>
       </div>

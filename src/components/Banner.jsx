@@ -25,7 +25,7 @@ const Banner = () => {
               variants={fadeIn("up", 0.3)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
+              viewport={{ once: true, amount: 0.3 }}
               className="text-[55px] font-bold leading-[0.8] lg:text-[110px] text-theme-1-h2"
             >
               DEV on <span>DEMAND</span>
@@ -34,7 +34,7 @@ const Banner = () => {
               variants={fadeIn("up", 0.6)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
+              viewport={{ once: true, amount: 0.3 }}
               className="mb-6 text-[36px] lg:text-[60] font-secondary font-semibold uppercase leading-[1]"
             >
               <span className="text-theme-1-h2 mr-4 ">We deliver</span>
@@ -58,7 +58,7 @@ const Banner = () => {
               variants={fadeIn("up", 0.5)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
+              viewport={{ once: true, amount: 0.3 }}
               className="mb-8 max-w-lg mx-auto  lg:text-left text-lg font-primary lg:mx-0 text-theme-1-p"
             >
               Transforming Ideas into Digital Realities Innovative Solutions
@@ -69,7 +69,7 @@ const Banner = () => {
               variants={fadeIn("up", 0.5)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
+              viewport={{ once: true, amount: 0.3 }}
               className="flex max-w-max gap-x-6 items-center mb-2 mx-auto lg:mx-0"
             >
               <Link to="contact" smooth={true}>
@@ -87,7 +87,7 @@ const Banner = () => {
               variants={fadeIn("up", 0.7)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
+              viewport={{ once: true, amount: 0.3 }}
               className="flex text-[20px] gap-x-6 max-w-max mx-auto mb-10"
             >
               <a href="#">
@@ -107,6 +107,7 @@ const Banner = () => {
             variants={fadeIn("down", 0.5)}
             initial="hidden"
             whileInView={"show"}
+            viewport={{ once: true, amount: 0.3 }}
             className="hidden lg:flex flex-1 max-w-[320px] pointer-events-none lg:mx-0 lg:max-w-[482px]"
           >
             <img src={BannerImage} alt="" />

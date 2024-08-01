@@ -13,7 +13,7 @@ const ContactUs = () => {
             variants={fadeIn("down", 0.3)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.3 }}
+            viewport={{ once: true, amount: 0.3 }}
             className="flex flex-col items-center mb-4"
           >
             <h4 className="text-2xl uppercase  font-medium mb-1 tracking-wide">
@@ -29,7 +29,7 @@ const ContactUs = () => {
               variants={fadeIn("right", 0.3)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.3 }}
+              viewport={{ once: true, amount: 0.3 }}
               className="flex-1 hidden md:flex   bg-no-repeat justify-center lg:justify-start items-center"
             >
               <img
@@ -42,7 +42,7 @@ const ContactUs = () => {
               variants={fadeIn("left", 0.3)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.3 }}
+              viewport={{ once: true, amount: 0.3 }}
               className="flex-1  rounded-2xl  flex flex-col gap-y-3 md:gap-y-6 pb-24 md:p-6 items-start"
             >
               <input
